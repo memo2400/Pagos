@@ -1,0 +1,13 @@
+<p>formulario works!</p>
+
+
+<h2>Agregar Dato</h2>
+<form (ngSubmit)="agregarDato()">
+  <label for="dato">Dato:</label>
+  <input type="text" id="dato_ingresaso" [(ngModel)]="nuevoDato" name="dato" required>
+  <button type="submit">Agregar a lista</button>
+</form>
+<ul>
+  <li *ngFor="let dato of datos">{{ dato }}</li>
+</ul>
+
